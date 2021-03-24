@@ -1,0 +1,61 @@
+$gutter: 30px;
+$grid-count : 12; // 共12欄
+
+.container {
+    max-width: 1110px;
+    width: 100%;
+    margin: 0 auto;
+    padding-right: $gutter / 2;
+    padding-left: $gutter / 2; // 手機尺寸左右留白15px
+    @include lg {
+        padding-right: 39px;
+        padding-left: 39px; // 平板尺寸左右留白39px
+    }
+    @include md {
+        padding-right: $gutter / 2;
+        padding-left: $gutter / 2; // 手機尺寸左右留白15px
+    }
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -$gutter / 2;
+    margin-left: -$gutter / 2;
+}
+
+
+// .col-1 ~ .col-12 (desktop)
+@for $i from 0 through $grid-count {
+    @if ($i == 0) {
+        .col {
+            padding-left: $gutter / 2;
+            padding-right: $gutter / 2;
+            max-width: 100%;
+        }
+    } @else {
+            .col-#{$i} {
+                max-width: 100% / ($grid-count / $i);
+                padding-left: $gutter / 2;
+                padding-right: $gutter / 2;
+            }
+        }
+}
+// .col-1 ~ .col-12 (pad/phone)
+@mixin col($breakpoint: null) {
+    @for $i from 1 through $grid-count {
+        .col#{$breakpoint}-#{$i} {
+            max-width: 100% / ($grid-count / $i);
+        }
+    }
+}
+
+// (RWD)
+// pad
+@include lg {
+    @include col(-lg);
+}
+// phone
+@include md {
+    @include col(-md);
+}

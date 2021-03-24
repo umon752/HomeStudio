@@ -1,0 +1,210 @@
+// .h1~.h6
+@mixin h1-h6($breakpoint: null) {
+
+    @each $key,
+    $value in $h1-h6 {
+        @if ($breakpoint==null) {
+            .#{$key} {
+                font-size: $value;
+            }
+        }
+
+        @else {
+            .#{$key}#{$breakpoint} {
+                font-size: $value;
+            }
+        }
+    }
+}
+
+// .font-size
+@mixin font-sizes($breakpoint: null) {
+
+    @each $key,
+    $value in $font-sizes {
+        @if ($breakpoint==null) {
+            .font-size-#{$key} {
+                font-size: $value;
+            }
+        }
+
+        @else {
+            .font-size#{$breakpoint}-#{$key} {
+                font-size: $value;
+            }
+        }
+    }
+}
+
+// .font-weight
+@mixin font-weights($breakpoint: null) {
+
+    @each $key,
+    $value in $font-weights {
+        @if ($breakpoint==null) {
+            .font-weight-#{$key} {
+                font-weight: $value;
+            }
+        }
+
+        @else {
+            .font-weight#{$breakpoint}-#{$key} {
+                font-weight: $value;
+            }
+        }
+    }
+}
+
+// .text-align
+@mixin text-aligns($breakpoint: null) {
+
+    @each $key,
+    $value in $text-aligns {
+        @if ($breakpoint==null) {
+            .text-#{$key} {
+                text-align: $value;
+            }
+        }
+
+        .text#{$breakpoint}-#{$key} {
+            text-align: $value;
+        }
+    }
+}
+
+// .bg-color、.text-color
+@mixin colors($breakpoint: null) {
+
+    @each $key,
+    $value in $colors {
+        @if ($breakpoint==null) {
+            .text-#{$key} {
+                color: $value;
+            }
+
+            .bg-#{$key} {
+                background: $value;
+            }
+        }
+
+        @else {
+            .text#{$breakpoint}-#{$key} {
+                color: $value;
+            }
+
+            .bg#{$breakpoint}-#{$key} {
+                background: $value;
+            }
+        }
+    }
+}
+
+// .flex
+@mixin flex-properties($breakpoint: null) {
+
+    @each $key,
+    $value in $flex-properties {
+        .align-items#{$breakpoint}-#{$key} {
+            align-items: $value;
+        }
+
+        .justify-content#{$breakpoint}-#{$key} {
+            justify-content: $value;
+        }
+    }
+}
+
+@mixin flex-directions($breakpoint: null) {
+
+    @each $key,
+    $value in $flex-directions {
+        .flex#{$breakpoint}-#{$key} {
+            flex-direction: $value;
+        }
+    }
+}
+
+.flex {
+    &-column {
+        flex-direction: column;
+    }
+
+    &-wrap {
+        flex-wrap: wrap;
+    }
+
+    &-nowrap {
+        flex-wrap: nowrap;
+    }
+}
+
+// .display
+@mixin display($breakpoint: null) {
+
+    @each $key,
+    $value in $display {
+        .d#{$breakpoint}-#{$key} {
+            display: $value;
+        }
+    }
+}
+
+// .width
+@mixin width($breakpoint: null) {
+
+    @each $key,
+    $value in $width {
+        .w#{$breakpoint}-#{$key} {
+            width: $value;
+        }
+    }
+}
+
+// .position
+.position-absolute {
+    position: absolute;
+}
+
+.position-relative {
+    position: relative;
+}
+
+
+
+// 套用RWD
+// desktop
+@include colors();
+@include h1-h6();
+@include font-sizes();
+@include flex-properties();
+@include flex-directions();
+@include display();
+@include width();
+@include font-weights();
+@include text-aligns();
+
+// pad
+@include lg {
+    @include colors(-lg);
+    @include h1-h6(-lg);
+    @include font-sizes(-lg);
+    @include flex-properties(-lg);
+    @include flex-directions(-lg);
+    @include display(-lg);
+    @include width(-lg);
+    @include font-weights(-lg);
+    @include text-aligns(-lg);
+}
+
+// phone
+@include md {
+    @include colors(-md);
+    @include h1-h6(-md);
+    @include font-sizes(-md);
+    @include flex-properties(-md);
+    @include flex-directions(-md);
+    @include display(-md);
+    @include width(-md);
+    @include font-weights(-md);
+    @include text-aligns(-md);
+}

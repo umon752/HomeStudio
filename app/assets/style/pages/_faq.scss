@@ -1,0 +1,9 @@
+.faq {
+    padding: 80px 0 304px 0;
+    @include lg {
+        padding: 40px 0 104px 0;
+    }
+    @include md {
+        padding: 24px 0 56px 0;
+    }
+}

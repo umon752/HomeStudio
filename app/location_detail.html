@@ -1,0 +1,71 @@
+---
+title: 門市據點 | HOME STUDIO
+layout: ./app/ejs/layout.ejs
+engine: ejs
+current: location
+nav: none
+---
+
+<!-- banner -->
+<header class="inner__banner d-flex align-items-end">
+    <div class="container d-flex">
+        <h1 class="inner__banner__title h2 h4-md text-white mr-4 mr-md-2">門市據點</h1>
+        <span class="material-icons h2 h4-md text-white">
+            location_on
+        </span>
+    </div>
+</header>
+
+<!-- content -->
+<main class="location">
+    <div class="container">
+        <div class="custom-select d-flex align-items-center mb-8 mb-lg-6 mb-md-20" data-aos="fade-up">
+            <label for="location" class="h5 font-size-lg-m font-size-lg-s mr-5 mr-md-3">選擇分店</label>
+            <select name="location" id="location">
+                <option value="台北中山旗艦店">台北中山旗艦店</option>
+                <option value="新北新店旗艦店">新北新店旗艦店</option>
+                <option value="桃園中壢旗艦店">桃園中壢旗艦店</option>
+            </select>
+        </div>
+        <div class="row">
+            <div class="col-5 col-lg-12 mb-lg-3 mb-md-0">
+                <div class="card d-lg-flex flex-md-column" data-aos="fade-up">
+                    <div class="col-lg-6 col-md-12 pr-lg-2 pr-md-0">
+                        <img class="location__img w-100" src="./assets/images/store01.jpg" alt="台北中山旗艦店">
+                    </div>
+                    <div class="location__list col-lg-6 col-md-12 w-100 pl-lg-2 pl-md-0">
+                        <h2 class="card-title font-weight-lg-bold py-3 px-6 py-lg-2 px-lg-4">台北中山旗艦店</h2>
+                        <ul class="card-body font-size-l font-size-lg-s px-2 py-4">
+                            <li class="d-flex mb-2">
+                                <img class="location__icon mr-3 mr-lg-4"
+                                    src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/icon-phone-black.svg"
+                                    alt="phone-icon">
+                                電話：(02)000-1234
+                            </li>
+                            <li class="d-flex mb-2">
+                                <img class="location__icon mr-3 mr-lg-4"
+                                    src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/icon-clock-black.svg"
+                                    alt="clock-icon">
+                                營業時間：10:00-21:00
+                            </li>
+                            <li class="d-flex align-items-start mb-2">
+                                <img class="location__icon mr-3 mr-lg-4"
+                                    src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/icon-map.svg"
+                                    alt="map-icon">
+                                地址：台北市中山區南京東路25巷2-1號
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-7 col-lg-12 w-100" data-aos="fade-up" data-aos-delay="100">
+                <iframe class="location__map"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.463948131786!2d121.535703915379!3d25.05225964371237!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442abdf92334fbd%3A0xc3ee11a3a99323b!2zMTA0OTHlj7DljJfluILkuK3lsbHljYDljZfkuqzmnbHot6_kuInmrrUyNS0y6Jmf!5e0!3m2!1szh-TW!2stw!4v1604996793010!5m2!1szh-TW!2stw"
+                    width="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                    tabindex="0"></iframe>
+            </div>
+        </div>
+
+
+    </div>
+</main>

@@ -1,0 +1,25 @@
+.custom-select {
+    label {
+        white-space: nowrap;
+    }
+
+    select {
+        color: #495057;
+        border: 1px solid #CED4DA;
+        font-size: $font-size-l;
+        padding: 10px 19px;
+        width: 324px;
+
+        @include lg {
+            font-size: $font-size-m;
+            padding: $spacer-3 $spacer-4;
+            width: 327px;
+        }
+
+        @include md {
+            font-size: $font-size-s;
+            padding: $spacer-2 $spacer-4;
+            flex-grow: 1;
+        }
+    }
+}

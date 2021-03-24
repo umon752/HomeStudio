@@ -1,0 +1,145 @@
+.blogDetail__content {
+    padding: 8px 0 304px 0;
+
+    @include md {
+        padding-bottom: 56px;
+    }
+
+    &__title {
+        @include md {
+            color: $primary;
+        }
+    }
+
+    &__share {
+        margin-top: 52px;
+        border-bottom: 1px solid #707070;
+
+        @include md {
+            margin-top: 30px;
+        }
+
+        img {
+            transition: .5s;
+        }
+
+        a:hover>img {
+            opacity: .6;
+        }
+    }
+
+    &__btn {
+        a {
+            &:first-child {
+                &::before {
+                    content: '';
+                    background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/icon-undo.svg");
+                    width: 24px;
+                    height: 21px;
+                    background-size: contain;
+                    display: inline-block;
+                    margin-right: 8px;
+
+                    @include md {
+                        width: 16px;
+                        height: 14px;
+                    }
+                }
+            }
+
+            &:last-child {
+                &::before {
+                    content: '';
+                    background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/icon-redo.svg");
+                    width: 24px;
+                    height: 21px;
+                    background-size: contain;
+                    display: none;
+                    margin-right: 8px;
+
+                    @include md {
+                        width: 16px;
+                        height: 14px;
+                        display: inline-block;
+                    }
+                }
+
+                &::after {
+                    content: '';
+                    background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/icon-redo.svg");
+                    width: 24px;
+                    height: 21px;
+                    background-size: contain;
+                    display: inline-block;
+                    margin-left: 8px;
+
+                    @include md {
+                        width: 16px;
+                        height: 14px;
+                        display: none;
+                    }
+                }
+            }
+
+            &:hover {
+                opacity: .6;
+            }
+        }
+    }
+}
+
+.blogDetail__content__tag {
+    a {
+        color: $primary;
+
+        &:hover {
+            color: darken($primary, 10%);
+        }
+    }
+
+    &--title {
+        font-size: 28px;
+
+        @include md {
+            font-size: 20px;
+        }
+    }
+}
+
+.blogDetail__content__img {
+    height: 400px;
+    object-fit: cover;
+
+    @include md {
+        height: 350px;
+    }
+}
+
+.blogDetail__content__breadcrumbs {
+    margin-bottom: 17px;
+
+    @include md {
+        margin-bottom: 6px;
+    }
+
+    li:not(:last-child)::after {
+        content: '/';
+        margin: 0 5px;
+    }
+
+    a {
+        color: black;
+
+        &:hover {
+            color: $secondary;
+        }
+    }
+
+    .active {
+        color: $primary;
+
+        &:hover {
+            color: $primary;
+        }
+    }
+}

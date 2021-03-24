@@ -1,0 +1,167 @@
+$spacer: 4px;
+$spacer-1: $spacer;
+$spacer-2: $spacer * 2;
+$spacer-3: $spacer * 3;
+$spacer-4: $spacer * 4;
+$spacer-5: $spacer * 5;
+$spacer-6: $spacer * 6;
+$spacer-7: $spacer * 7;
+$spacer-8: $spacer * 8;
+$spacer-9: $spacer * 9;
+$spacer-10: $spacer * 10;
+
+
+// .m-0 ~ 10、.p-0 ~ 10
+@mixin spacers($breakpoint: null) {
+
+    @each $key,
+    $value in $directions {
+        @for $i from 0 through 10 {
+            @if ($i==0) {
+                .m#{$key}#{$breakpoint}-#{$i} {
+                    margin-#{$value}: 0;
+                }
+
+                .p#{$key}#{$breakpoint}-#{$i} {
+                    padding-#{$value}: 0;
+                }
+            }
+
+            @else {
+                .m#{$key}#{$breakpoint}-#{$i} {
+                    margin-#{$value}: $spacer * $i;
+                }
+
+                .p#{$key}#{$breakpoint}-#{$i} {
+                    padding-#{$value}: $spacer * $i;
+                }
+            }
+        }
+    }
+}
+
+// m-0 ~ 10
+@mixin spacer($breakpoint: null) {
+    @for $i from 0 through 10 {
+        @if ($i==0) {
+            .m#{$breakpoint}-#{$i} {
+                margin: 0;
+            }
+
+            .p#{$breakpoint}-#{$i} {
+                padding: 0;
+            }
+        }
+
+        @else {
+            .m#{$breakpoint}-#{$i} {
+                margin-left: $spacer * $i;
+                margin-right: $spacer * $i;
+                margin-top: $spacer * $i;
+                margin-bottom: $spacer * $i;
+            }
+
+            .p#{$breakpoint}-#{$i} {
+                padding-left: $spacer * $i;
+                padding-right: $spacer * $i;
+                padding-top: $spacer * $i;
+                padding-bottom: $spacer * $i;
+            }
+        }
+    }
+}
+
+// mx-0 ~ 10
+@mixin spacersX($breakpoint: null) {
+    @for $i from 0 through 10 {
+        @if ($i==0) {
+            .mx#{$breakpoint}-#{$i} {
+                margin-left: 0;
+                margin-right: 0;
+            }
+
+            .px#{$breakpoint}-#{$i} {
+                padding-left: 0;
+                padding-right: 0;
+            }
+        }
+
+        @else {
+            .mx#{$breakpoint}-#{$i} {
+                margin-left: $spacer * $i;
+                margin-right: $spacer * $i;
+            }
+
+            .px#{$breakpoint}-#{$i} {
+                padding-left: $spacer * $i;
+                padding-right: $spacer * $i;
+            }
+        }
+    }
+}
+
+// my-0 ~ 10
+@mixin spacersY($breakpoint: null) {
+    @for $i from 0 through 10 {
+        @if ($i==0) {
+            .my#{$breakpoint}-#{$i} {
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+
+            .py#{$breakpoint}-#{$i} {
+                padding-top: 0;
+                padding-bottom: 0;
+            }
+        }
+
+        @else {
+            .my#{$breakpoint}-#{$i} {
+                margin-top: $spacer * $i;
+                margin-bottom: $spacer * $i;
+            }
+
+            .py#{$breakpoint}-#{$i} {
+                padding-top: $spacer * $i;
+                padding-bottom: $spacer * $i;
+            }
+        }
+    }
+}
+
+// .m-auto、.p-auto
+@each $key,
+$value in $directions {
+    .m#{$key}-auto {
+        margin-#{$value}: auto;
+    }
+}
+
+.mx-auto {
+    margin: 0 auto;
+}
+
+
+
+// (RWD)
+// desktop
+@include spacers();
+@include spacer();
+@include spacersX();
+@include spacersY;
+
+// pad
+@include lg {
+    @include spacers(-lg);
+    @include spacer(-lg);
+    @include spacersX(-lg);
+    @include spacersY(-lg);
+}
+
+// phone
+@include md {
+    @include spacers(-md);
+    @include spacer(-md);
+    @include spacersX(-md);
+    @include spacersY(-md);
+}

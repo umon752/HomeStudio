@@ -1,0 +1,59 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    letter-spacing: .1rem;
+}
+
+body {
+    line-height: $line-height-base;
+    font-family: 'Roboto', "Noto Sans TC", $font-family-base;
+    font-size: $font-size-base;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    line-height: $line-height-base * 0.8;
+}
+
+h1 {
+    font-size: $font-size-h1;
+    font-weight: $font-weight-bold;
+
+    @include lg {
+        font-size: $font-size-h2;
+    }
+
+    @include md {
+        font-size: $font-size-h4;
+    }
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+    transition: all ease 300ms;
+}
+
+input,
+textarea,
+select {
+    &:focus {
+        outline: none;
+    }
+}
+
+input[type=submit] {
+    cursor: pointer;
+    transition: all ease 300ms;
+    font-size: $font-size-base;
+}

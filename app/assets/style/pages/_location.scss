@@ -1,0 +1,61 @@
+.location {
+    padding: 16px 0 304px 0;
+
+    @include lg {
+        padding: 8px 0 104px 0;
+    }
+
+    @include md {
+        padding: 8px 0 56px 0;
+    }
+
+    &__list {
+        align-self: center;
+    }
+
+    .card {
+        a:hover {
+            background: $primary;
+        }
+
+        .location__icon {
+            width: 20px;
+            height: auto;
+            object-fit: contain;
+        }
+    }
+
+    .card-title {
+        border: 1px solid #00000020;
+        border-bottom: none;
+    }
+
+    .card-body {
+        padding: 16px 24px;
+
+        @include lg {
+            padding: 16px;
+        }
+    }
+
+    &__img {
+        height: 250px;
+        object-fit: cover;
+
+        @include md {
+            height: 200px;
+        }
+    }
+
+    &__map {
+        height: 442px;
+
+        @include lg {
+            height: 465px;
+        }
+
+        @include md {
+            height: 227px;
+        }
+    }
+}

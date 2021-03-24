@@ -1,0 +1,99 @@
+.navbar {
+    padding: 15px 88px;
+
+    @include lg {
+        padding: 0 40px;
+    }
+
+    @include md {
+        padding: 0;
+    }
+
+    .logo {
+        width: 120px;
+        height: 130px;
+        position: absolute;
+        top: 0;
+        box-shadow: 3px 3px 3px rgba(104, 104, 104, 0.3);
+        z-index: 99;
+
+        img {
+            height: 80px;
+            object-fit: cover;
+            transition: all linear 300ms;
+
+            @include md {
+                margin-top: 0;
+            }
+        }
+
+        &:hover>img {
+            transition: all linear 300ms;
+            opacity: .6;
+        }
+
+        @include lg {
+            position: inherit;
+            box-shadow: none;
+        }
+
+        @include md {
+            width: 90px;
+            height: 80px;
+            margin: 8px 0 0px 0;
+        }
+    }
+}
+
+
+.navbar__item {
+    position: relative;
+
+    @include md {
+        border: 1px solid white;
+
+        &:nth-child(1) {
+            border-right: none;
+            border-left: none;
+            border-bottom: none;
+        }
+
+        &:nth-child(2) {
+            border-right: none;
+            border-bottom: none;
+        }
+
+        &:nth-child(3) {
+            border-right: none;
+            border-left: none;
+            border-bottom: none;
+        }
+
+        &:nth-child(4) {
+            border-right: none;
+            border-bottom: none;
+        }
+    }
+
+    a {
+        &::after {
+            content: '';
+            position: absolute;
+            left: 50%;
+            bottom: -3px;
+            height: 3px;
+            width: 0;
+            background-color: $light;
+            transition: all 0.25s ease;
+            transform: translate(-50%);
+        }
+
+        &:hover::after {
+            width: 100%;
+
+            @include md {
+                width: 0;
+            }
+        }
+    }
+}

@@ -1,0 +1,22 @@
+/* RWD */
+// pad
+@mixin lg {
+    @media (max-width: 1024px) {
+        @content;
+    }
+}
+
+// phone
+@mixin md {
+    @media (max-width: 767px) {
+        @content;
+    }
+}
+
+
+/* 記住CSS */
+@mixin bg-cover {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}

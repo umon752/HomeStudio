@@ -1,0 +1,102 @@
+.products__banner {
+
+    &__bedroom--item1,
+    &__bedroom--item2,
+    &__kitchen--item1,
+    &__kitchen--item2 {
+        height: 309px;
+        width: 100%;
+        @include bg-cover;
+
+        @include md {
+            height: 144px;
+        }
+    }
+
+    &__bedroom--item1 {
+        background-image: url("/assets/images/bedroom01.jpg");
+        margin-right: 15px;
+
+        @include lg {
+            margin-right: 0;
+        }
+    }
+
+    &__bedroom--item2 {
+        background-image: url("/assets/images/bedroom02.jpg");
+        margin-left: 15px;
+
+        @include lg {
+            margin-left: 0;
+        }
+    }
+
+    &__kitchen--item1 {
+        background-image: url("/assets/images/kitchen03.jpg");
+        margin-right: 15px;
+
+        @include lg {
+            margin-right: 0;
+        }
+    }
+
+    &__kitchen--item2 {
+        background-image: url("/assets/images/kitchen04.jpg");
+        margin-left: 15px;
+
+        @include lg {
+            margin-left: 0;
+        }
+    }
+}
+
+.products__content {
+    padding: 88px 0 156px 0;
+
+    @include lg {
+        padding: 40px 0 104px 0;
+    }
+
+    @include md {
+        padding: 30px 0 56px 0;
+    }
+}
+
+.products__content__list {
+    margin-bottom: 100px;
+
+    @include lg {
+        margin-bottom: 105px;
+    }
+
+    @include md {
+        margin-bottom: $spacer-10;
+    }
+
+
+
+
+    &__item {
+        margin-bottom: 104px;
+        width: 100%;
+
+        @include lg {
+            margin-bottom: 72px;
+        }
+
+        @include md {
+            margin-bottom: $spacer-8;
+        }
+
+        img {
+            height: 300px;
+            object-fit: cover;
+            transition: all linear 300ms;
+        }
+
+        a:hover>img {
+            transition: all linear 300ms;
+            opacity: .8;
+        }
+    }
+}

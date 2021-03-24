@@ -1,0 +1,9 @@
+.inner__banner {
+    background-image: url("/assets/images/banner01.jpg");
+    @include bg-cover;
+    height: 304px;
+
+    @include md {
+        height: 143px;
+    }
+}
