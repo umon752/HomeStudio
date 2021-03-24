@@ -1,11 +1,43 @@
----
-title: HOME STUDIO
-layout: ./app/ejs/layout.ejs
-engine: ejs
-current: index
-nav: none
----
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>HOME STUDIO</title>
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+  <!-- material icon（CDN） -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- AOS（CDN） -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="./assets/style/all.css">
+</head>
+
+<body>
+  <nav class="navbar bg-primary">
+    <div class="d-lg-flex justify-content-between align-items-center flex-md-column">
+      <a href="index.html"
+        class="logo bg-primary-dark bg-lg-transparent d-flex align-items-center justify-content-center"
+        data-aos="fade-down">
+        <img src="./assets/images/logo.svg" alt="Home style">
+      </a>
+      <ul class="h6 font-size-md-m text-center w-md-100 d-flex flex-wrap justify-content-end">
+        <li class="navbar__item w-md-50"><a class="text-white d-inline-block d-md-block px-3 px-md-0 py-md-2"
+            href="case_bedroom.html">案例分享</a></li>
+        <li class="navbar__item w-md-50 ml-10 ml-lg-4 ml-md-0"><a
+            class="text-white d-inline-block d-md-block px-3 px-md-0 py-md-2" href="location.html">門市據點</a></li>
+        <li class="navbar__item w-md-50 ml-10 ml-lg-4 ml-md-0"><a
+            class="text-white d-inline-block d-md-block px-3 px-md-0 py-md-2" href="blog.html">部落格</a></li>
+        <li class="navbar__item w-md-50 ml-10 ml-lg-4 ml-md-0"><a
+            class="text-white d-inline-block d-md-block px-3 px-md-0 py-md-2" href="faq.html">常見問題</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  
+
+  
 <!-- banner -->
 <header class="banner text-center d-flex">
   <div class="container">
@@ -206,3 +238,83 @@ nav: none
     </div>
   </section>
 </main>
+
+  <footer class="bg-primary">
+    <div class="container py-8 py-lg-10">
+      <div class="nav d-flex justify-content-between align-items-center mb-8 mb-lg-6">
+        <ul class="d-flex d-md-none">
+          <li class="nav__menu mr-8 mr-lg-6"><a class="px-2" href="index.html">首頁</a></li>
+          <li class="nav__menu mr-8 mr-lg-6"><a class="px-2" href="case_bedroom.html">案例分享</a></li>
+          <li class="nav__menu mr-8 mr-lg-6"><a class="px-2" href="location.html">門市據點</a></li>
+          <li class="nav__menu mr-8 mr-lg-6"><a class="px-2" href="blog.html">部落格</a></li>
+          <li class="nav__menu mr-8 mr-lg-6"><a class="px-2" href="faq.html">常見問題</a></li>
+        </ul>
+        <ul class="d-flex">
+          <li class="ml-8 ml-lg-6">
+            <a href="#">
+              <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/icon-fb.svg"
+                alt="facebook">
+            </a>
+          </li>
+          <li class="ml-8 ml-lg-6">
+            <a href="#">
+              <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/icon-ig.svg"
+                alt="instagram">
+            </a>
+          </li>
+          <li class="ml-8 ml-lg-6">
+            <a href="#">
+              <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/icon-line.svg"
+                alt="line">
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <ul class="info mb-6">
+        <li class="info__list">
+          <a href="tel:0800-000-000" class="d-flex">
+            <img class="info__list__icon"
+              src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/icon-phone.svg"
+              alt="phone">
+            0800-000-000
+          </a>
+        </li>
+        <li class="info__list">
+          <a href="mailto:glasses@business.com" class="d-flex">
+            <img class="info__list__icon"
+              src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/icon-mail.svg"
+              alt="mail">
+            glasses@business.com
+          </a>
+        </li>
+      </ul>
+
+      <div class="copyright d-flex flex-wrap justify-content-between align-items-center mb-md-2">
+        <div class="d-flex align-items-center">
+          <a href="index.html" class="d-lg-none mr-5">
+            <img src="./assets/images/logo.svg" alt="Home style">
+          </a>
+          <p class="text-white font-size-s">Copyright © 2020 Home STUDIO.All rights reserved.</p>
+        </div>
+
+        <div class="w-md-100 d-flex justify-content-between align-items-end">
+          <ul class="font-size-s d-flex flex-md-column">
+            <li class="copyright__item"><a href="#">隱私權政策</a></li>
+            <li class="copyright__item"><a href="#">服務條款</a></li>
+          </ul>
+          <a href="index.html" class="d-none d-md-inline-block">
+            <img src="./assets/images/logo.svg" alt="Home style">
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+  <!-- AOS（CDN） -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script src="./assets/js/vendors.js"></script>
+  <script src="./assets/js/all.js"></script>
+</body>
+
+</html>
