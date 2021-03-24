@@ -7,7 +7,6 @@
 
 @import "helpers/utilities";
 @import "helpers/spacing";
-@import "modules/loading";
 @import "modules/btn";
 @import "modules/card";
 @import "modules/form";
@@ -16,6 +15,7 @@
 @import "modules/products_nav";
 @import "modules/inner_banner";
 
+@import "layout/loading";
 @import "layout/header";
 @import "layout/footer";
 @import "pages/index";
