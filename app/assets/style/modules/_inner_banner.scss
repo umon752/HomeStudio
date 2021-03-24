@@ -1,5 +1,5 @@
 .inner__banner {
-    background-image: url("/assets/images/banner01.jpg");
+    background-image: url("../images/banner01.jpg");
     @include bg-cover;
     height: 304px;
 

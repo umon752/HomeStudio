@@ -14,7 +14,7 @@
     }
 
     &__bedroom--item1 {
-        background-image: url("/assets/images/bedroom01.jpg");
+        background-image: url("../images/bedroom01.jpg");
         margin-right: 15px;
 
         @include lg {
@@ -23,7 +23,7 @@
     }
 
     &__bedroom--item2 {
-        background-image: url("/assets/images/bedroom02.jpg");
+        background-image: url("../images/bedroom02.jpg");
         margin-left: 15px;
 
         @include lg {
@@ -32,7 +32,7 @@
     }
 
     &__kitchen--item1 {
-        background-image: url("/assets/images/kitchen03.jpg");
+        background-image: url("../images/kitchen03.jpg");
         margin-right: 15px;
 
         @include lg {
@@ -41,7 +41,7 @@
     }
 
     &__kitchen--item2 {
-        background-image: url("/assets/images/kitchen04.jpg");
+        background-image: url("../images/kitchen04.jpg");
         margin-left: 15px;
 
         @include lg {

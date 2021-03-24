@@ -1,5 +1,5 @@
 .banner {
-    background-image: url("/assets/images/banner.jpg");
+    background-image: url("../images/banner.jpg");
     @include bg-cover;
     height: 800px;
 
@@ -124,7 +124,7 @@
 
 
 .design {
-    background-image: url("/assets/images/design-bg.jpg");
+    background-image: url("../images/design-bg.jpg");
     @include bg-cover;
     width: 100%;
     position: relative;

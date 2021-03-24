@@ -1,0 +1,39 @@
+.loading {
+    width: 100vw;
+    height: 100vh;
+    background: $primary;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+
+    &__logo {
+        position: absolute;
+    }
+
+    &__logo__roof {
+        width: 150px;
+        opacity: 0;
+
+        @include md {
+            width: 100px;
+        }
+    }
+
+    &__logo__window {
+        width: 20px;
+
+        @include md {
+            width: 15px;
+        }
+    }
+
+    &__logo__text {
+        height: 10px;
+
+        @include md {
+            height: 6px;
+        }
+    }
+}
