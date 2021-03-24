@@ -2198,6 +2198,34 @@ input[type=submit] {
     padding-top: 40px;
     padding-bottom: 40px; } }
 
+.loading {
+  width: 100vw;
+  height: 100vh;
+  background: #7A876C;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999; }
+  .loading__logo {
+    position: absolute; }
+  .loading__logo__roof {
+    width: 150px;
+    opacity: 0; }
+    @media (max-width: 767px) {
+      .loading__logo__roof {
+        width: 100px; } }
+  .loading__logo__window {
+    width: 20px; }
+    @media (max-width: 767px) {
+      .loading__logo__window {
+        width: 15px; } }
+  .loading__logo__text {
+    height: 10px; }
+    @media (max-width: 767px) {
+      .loading__logo__text {
+        height: 6px; } }
+
 .btn-primary {
   background: #7A876C;
   border-radius: 0;
@@ -2426,7 +2454,7 @@ input[type=submit] {
     opacity: 1; }
 
 .inner__banner {
-  background-image: url("/assets/images/banner01.jpg");
+  background-image: url("../images/banner01.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -2623,7 +2651,7 @@ footer .logo {
       margin-right: 0; } }
 
 .banner {
-  background-image: url("/assets/images/banner.jpg");
+  background-image: url("../images/banner.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -2728,7 +2756,7 @@ footer .logo {
     color: #9dad8b; }
 
 .design {
-  background-image: url("/assets/images/design-bg.jpg");
+  background-image: url("../images/design-bg.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -2807,28 +2835,28 @@ footer .logo {
       height: 144px; } }
 
 .products__banner__bedroom--item1 {
-  background-image: url("/assets/images/bedroom01.jpg");
+  background-image: url("../images/bedroom01.jpg");
   margin-right: 15px; }
   @media (max-width: 1024px) {
     .products__banner__bedroom--item1 {
       margin-right: 0; } }
 
 .products__banner__bedroom--item2 {
-  background-image: url("/assets/images/bedroom02.jpg");
+  background-image: url("../images/bedroom02.jpg");
   margin-left: 15px; }
   @media (max-width: 1024px) {
     .products__banner__bedroom--item2 {
       margin-left: 0; } }
 
 .products__banner__kitchen--item1 {
-  background-image: url("/assets/images/kitchen03.jpg");
+  background-image: url("../images/kitchen03.jpg");
   margin-right: 15px; }
   @media (max-width: 1024px) {
     .products__banner__kitchen--item1 {
       margin-right: 0; } }
 
 .products__banner__kitchen--item2 {
-  background-image: url("/assets/images/kitchen04.jpg");
+  background-image: url("../images/kitchen04.jpg");
   margin-left: 15px; }
   @media (max-width: 1024px) {
     .products__banner__kitchen--item2 {
