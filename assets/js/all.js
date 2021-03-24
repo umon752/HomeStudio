@@ -1,6 +1,6 @@
 "use strict";
 
-var time = 3000;
+var time = 1300;
 /* anime */
 
 anime.timeline({
@@ -24,17 +24,11 @@ $(document).ready(function () {
   /* 1.3 秒後開始執行 */
   setTimeout(function () {
     // 設定 loading 畫面消失
+    $('.loading').addClass('loading--fadeOut');
     AOS.init({
       easing: 'ease',
       duration: 600,
       once: true
-    });
-    anime.timeline({
-      loop: false
-    }).add({
-      targets: '.loading',
-      opacity: [1, 0],
-      duration: 800
     });
   }, time);
 });

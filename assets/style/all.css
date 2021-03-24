@@ -2198,34 +2198,6 @@ input[type=submit] {
     padding-top: 40px;
     padding-bottom: 40px; } }
 
-.loading {
-  width: 100vw;
-  height: 100vh;
-  background: #7A876C;
-  overflow: hidden;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 999; }
-  .loading__logo {
-    position: absolute; }
-  .loading__logo__roof {
-    width: 150px;
-    opacity: 0; }
-    @media (max-width: 767px) {
-      .loading__logo__roof {
-        width: 100px; } }
-  .loading__logo__window {
-    width: 20px; }
-    @media (max-width: 767px) {
-      .loading__logo__window {
-        width: 15px; } }
-  .loading__logo__text {
-    height: 10px; }
-    @media (max-width: 767px) {
-      .loading__logo__text {
-        height: 6px; } }
-
 .btn-primary {
   background: #7A876C;
   border-radius: 0;
@@ -2462,6 +2434,40 @@ input[type=submit] {
   @media (max-width: 767px) {
     .inner__banner {
       height: 143px; } }
+
+.loading {
+  width: 100vw;
+  height: 100vh;
+  background: #7A876C;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999; }
+  .loading--fadeOut {
+    display: none !important;
+    opacity: 0;
+    -webkit-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s; }
+  .loading__logo {
+    position: absolute; }
+  .loading__logo__roof {
+    width: 150px;
+    opacity: 0; }
+    @media (max-width: 767px) {
+      .loading__logo__roof {
+        width: 100px; } }
+  .loading__logo__window {
+    width: 20px; }
+    @media (max-width: 767px) {
+      .loading__logo__window {
+        width: 15px; } }
+  .loading__logo__text {
+    height: 10px; }
+    @media (max-width: 767px) {
+      .loading__logo__text {
+        height: 6px; } }
 
 .navbar {
   padding: 15px 88px; }
