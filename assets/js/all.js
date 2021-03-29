@@ -1,6 +1,6 @@
 "use strict";
 
-var time = 1300;
+var time = 1500;
 /* anime */
 
 anime.timeline({

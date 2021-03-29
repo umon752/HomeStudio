@@ -89,20 +89,21 @@ img {
 
 a {
   text-decoration: none;
-  -webkit-transition: all ease 300ms;
-  -o-transition: all ease 300ms;
-  transition: all ease 300ms; }
+  -webkit-transition: all ease .3s;
+  -o-transition: all ease .3s;
+  transition: all ease .3s; }
 
 input:focus,
 textarea:focus,
-select:focus {
+select:focus,
+button:focus {
   outline: none; }
 
 input[type=submit] {
   cursor: pointer;
-  -webkit-transition: all ease 300ms;
-  -o-transition: all ease 300ms;
-  transition: all ease 300ms;
+  -webkit-transition: all ease .3s;
+  -o-transition: all ease .3s;
+  transition: all ease .3s;
   font-size: 1rem; }
 
 .container {
@@ -2409,17 +2410,17 @@ input[type=submit] {
       opacity: 0;
       bottom: 0;
       left: 0;
-      -webkit-transition: 0.5s;
-      -o-transition: 0.5s;
-      transition: 0.5s; }
+      -webkit-transition: all ease .5s;
+      -o-transition: all ease .5s;
+      transition: all ease .5s; }
       @media (max-width: 767px) {
         .products__nav a::before {
           border-bottom-width: 3px; } }
     .products__nav a:hover::before {
       width: 100%;
-      -webkit-transition: 0.5s;
-      -o-transition: 0.5s;
-      transition: 0.5s;
+      -webkit-transition: all ease .5s;
+      -o-transition: all ease .5s;
+      transition: all ease .5s;
       opacity: 1; }
   .products__nav .active > a::before {
     width: 100%;
@@ -2489,17 +2490,19 @@ input[type=submit] {
       height: 80px;
       -o-object-fit: cover;
          object-fit: cover;
-      -webkit-transition: all linear 300ms;
-      -o-transition: all linear 300ms;
-      transition: all linear 300ms; }
+      -webkit-transition: all ease .4s;
+      -o-transition: all ease .4s;
+      transition: all ease .4s; }
       @media (max-width: 767px) {
         .navbar .logo img {
           margin-top: 0; } }
     .navbar .logo:hover > img {
-      -webkit-transition: all linear 300ms;
-      -o-transition: all linear 300ms;
-      transition: all linear 300ms;
-      opacity: .6; }
+      -webkit-transition: all ease .4s;
+      -o-transition: all ease .4s;
+      transition: all ease .4s;
+      -webkit-transform: translateY(-5px);
+          -ms-transform: translateY(-5px);
+              transform: translateY(-5px); }
     @media (max-width: 1024px) {
       .navbar .logo {
         position: inherit;
@@ -2538,9 +2541,9 @@ input[type=submit] {
     height: 3px;
     width: 0;
     background-color: #f7f7f7;
-    -webkit-transition: all 0.25s ease;
-    -o-transition: all 0.25s ease;
-    transition: all 0.25s ease;
+    -webkit-transition: all .25s ease;
+    -o-transition: all .25s ease;
+    transition: all .25s ease;
     -webkit-transform: translate(-50%);
         -ms-transform: translate(-50%);
             transform: translate(-50%); }
@@ -2554,9 +2557,9 @@ footer a {
   color: white; }
 
 footer .nav img {
-  -webkit-transition: all ease 300ms;
-  -o-transition: all ease 300ms;
-  transition: all ease 300ms; }
+  -webkit-transition: all ease .3s;
+  -o-transition: all ease .3s;
+  transition: all ease .3s; }
   footer .nav img:hover {
     opacity: .6; }
   @media (max-width: 1024px) {
@@ -2577,9 +2580,9 @@ footer .nav__menu {
     height: 3px;
     width: 0;
     background-color: #f7f7f7;
-    -webkit-transition: all 0.25s ease;
-    -o-transition: all 0.25s ease;
-    transition: all 0.25s ease;
+    -webkit-transition: all .25s ease;
+    -o-transition: all .25s ease;
+    transition: all .25s ease;
     -webkit-transform: translate(-50%);
         -ms-transform: translate(-50%);
             transform: translate(-50%); }
@@ -2752,13 +2755,13 @@ footer .logo {
       width: 100%;
       height: 100%; } }
   .basic__item__title h3 {
-    -webkit-transition: all linear 300ms;
-    -o-transition: all linear 300ms;
-    transition: all linear 300ms; }
+    -webkit-transition: all ease .3s;
+    -o-transition: all ease .3s;
+    transition: all ease .3s; }
   .basic__item__title:hover > h3 {
-    -webkit-transition: all linear 300ms;
-    -o-transition: all linear 300ms;
-    transition: all linear 300ms;
+    -webkit-transition: all ease .3s;
+    -o-transition: all ease .3s;
+    transition: all ease .3s;
     color: #9dad8b; }
 
 .design {
@@ -2898,13 +2901,13 @@ footer .logo {
       height: 300px;
       -o-object-fit: cover;
          object-fit: cover;
-      -webkit-transition: all linear 300ms;
-      -o-transition: all linear 300ms;
-      transition: all linear 300ms; }
+      -webkit-transition: all ease .3s;
+      -o-transition: all ease .3s;
+      transition: all ease .3s; }
     .products__content__list__item a:hover > img {
-      -webkit-transition: all linear 300ms;
-      -o-transition: all linear 300ms;
-      transition: all linear 300ms;
+      -webkit-transition: all ease .3s;
+      -o-transition: all ease .3s;
+      transition: all ease .3s;
       opacity: .8; }
 
 .location {
@@ -2968,7 +2971,13 @@ footer .logo {
       margin-right: 0; } }
 
 .blog__nav a:hover {
-  opacity: .5; }
+  opacity: .8;
+  -webkit-transform: translateY(-3px);
+      -ms-transform: translateY(-3px);
+          transform: translateY(-3px);
+  -webkit-transition: all ease .3s;
+  -o-transition: all ease .3s;
+  transition: all ease .3s; }
 
 .blog__content {
   padding: 82px 0 156px 0; }
@@ -3014,14 +3023,14 @@ footer .logo {
         opacity: 0;
         bottom: 0;
         left: 0;
-        -webkit-transition: 0.5s;
-        -o-transition: 0.5s;
-        transition: 0.5s; }
+        -webkit-transition: all ease .25s;
+        -o-transition: all ease .25s;
+        transition: all ease .25s; }
       .blog__content__item__link a:hover::before {
         width: 100%;
-        -webkit-transition: 0.5s;
-        -o-transition: 0.5s;
-        transition: 0.5s;
+        -webkit-transition: all ease .25s;
+        -o-transition: all ease .25s;
+        transition: all ease .25s;
         opacity: 1; }
 
 .blogDetail__content {
@@ -3039,9 +3048,9 @@ footer .logo {
       .blogDetail__content__share {
         margin-top: 30px; } }
     .blogDetail__content__share img {
-      -webkit-transition: .5s;
-      -o-transition: .5s;
-      transition: .5s; }
+      -webkit-transition: all ease .5s;
+      -o-transition: all ease .5s;
+      transition: all ease .5s; }
     .blogDetail__content__share a:hover > img {
       opacity: .6; }
   .blogDetail__content__btn a:first-child::before {
