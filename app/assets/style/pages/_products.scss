@@ -91,11 +91,11 @@
         img {
             height: 300px;
             object-fit: cover;
-            transition: all linear 300ms;
+            transition: all ease .3s;
         }
 
         a:hover>img {
-            transition: all linear 300ms;
+            transition: all ease .3s;
             opacity: .8;
         }
     }

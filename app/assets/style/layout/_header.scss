@@ -20,7 +20,7 @@
         img {
             height: 80px;
             object-fit: cover;
-            transition: all linear 300ms;
+            transition: all ease .4s;
 
             @include md {
                 margin-top: 0;
@@ -28,8 +28,9 @@
         }
 
         &:hover>img {
-            transition: all linear 300ms;
-            opacity: .6;
+            transition: all ease .4s;
+            transform: translateY(-5px);
+            // opacity: .6;
         }
 
         @include lg {
@@ -84,7 +85,7 @@
             height: 3px;
             width: 0;
             background-color: $light;
-            transition: all 0.25s ease;
+            transition: all .25s ease;
             transform: translate(-50%);
         }
 

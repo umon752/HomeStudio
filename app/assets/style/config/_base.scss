@@ -41,12 +41,13 @@ img {
 
 a {
     text-decoration: none;
-    transition: all ease 300ms;
+    transition: all ease .3s;
 }
 
 input,
 textarea,
-select {
+select,
+button {
     &:focus {
         outline: none;
     }
@@ -54,6 +55,6 @@ select {
 
 input[type=submit] {
     cursor: pointer;
-    transition: all ease 300ms;
+    transition: all ease .3s;
     font-size: $font-size-base;
 }

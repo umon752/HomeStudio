@@ -30,7 +30,7 @@
             opacity: 0;
             bottom: 0;
             left: 0;
-            transition: 0.5s;
+            transition: all ease .5s;
 
             @include md {
                 border-bottom-width: 3px;
@@ -39,7 +39,7 @@
 
         &:hover::before {
             width: 100%;
-            transition: 0.5s;
+            transition: all ease .5s;
             opacity: 1;
         }
     }

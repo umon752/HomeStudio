@@ -1,4 +1,4 @@
-const time = 1300;
+const time = 1500;
 
 /* anime */
 anime.timeline({
