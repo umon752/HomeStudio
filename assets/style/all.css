@@ -100,6 +100,7 @@ button:focus {
   outline: none; }
 
 input,
+select,
 textarea {
   -webkit-appearance: none;
   -moz-appearance: none;
