@@ -2308,7 +2308,6 @@ input[type=submit] {
       position: absolute;
       height: 14px;
       width: 14px;
-      background: white;
       border: 1px solid #000;
       display: block;
       left: 0;
@@ -2329,7 +2328,7 @@ input[type=submit] {
     -webkit-transform: skew(0deg, 50deg);
         -ms-transform: skew(0deg, 50deg);
             transform: skew(0deg, 50deg);
-    background: white;
+    background: #f7f7f7;
     left: 7px; }
   .from-group .checkbox-group label::after {
     content: '';
@@ -2339,7 +2338,7 @@ input[type=submit] {
     height: 3px;
     left: 10px;
     top: 9px;
-    background: white;
+    background: #f7f7f7;
     -webkit-transform: skew(0deg, -50deg);
         -ms-transform: skew(0deg, -50deg);
             transform: skew(0deg, -50deg); }
