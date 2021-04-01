@@ -23,7 +23,7 @@
         opacity: 0;
 
         @include md {
-            width: 100px;
+            width: 120px;
         }
     }
 
@@ -39,7 +39,7 @@
         height: 10px;
 
         @include md {
-            height: 6px;
+            height: 7px;
         }
     }
 }

@@ -30,7 +30,6 @@
         &:hover>img {
             transition: all ease .4s;
             transform: translateY(-5px);
-            // opacity: .6;
         }
 
         @include lg {

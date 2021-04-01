@@ -6,4 +6,8 @@
     @include md {
         height: 143px;
     }
+
+    &__title {
+        @include text-shadow;
+    }
 }
