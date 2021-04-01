@@ -99,7 +99,8 @@ select:focus,
 button:focus {
   outline: none; }
 
-input {
+input,
+textarea {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
