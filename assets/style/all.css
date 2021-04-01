@@ -99,6 +99,11 @@ select:focus,
 button:focus {
   outline: none; }
 
+input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none; }
+
 input[type=submit] {
   cursor: pointer;
   -webkit-transition: all ease .3s;
@@ -2274,12 +2279,14 @@ input[type=submit] {
   .card .card-footer {
     color: #707070; }
 
-.from-group input, .from-group textarea {
+.from-group input,
+.from-group textarea {
   border: 1px solid black;
   padding: 14px 16px;
   background-color: transparent; }
   @media (max-width: 1024px) {
-    .from-group input, .from-group textarea {
+    .from-group input,
+    .from-group textarea {
       padding: 8px 12px; } }
 
 .from-group .checkbox-group {
@@ -2293,7 +2300,8 @@ input[type=submit] {
       margin-bottom: 24px; } }
   .from-group .checkbox-group input {
     position: relative;
-    cursor: pointer; }
+    cursor: pointer;
+    border: none; }
     .from-group .checkbox-group input::after {
       content: '';
       position: absolute;
@@ -2307,7 +2315,8 @@ input[type=submit] {
     .from-group .checkbox-group input:checked::after {
       background: #7A876C;
       border: none; }
-    .from-group .checkbox-group input:checked label::after, .from-group .checkbox-group input ::before {
+    .from-group .checkbox-group input:checked label::after,
+    .from-group .checkbox-group input ::before {
       display: block; }
   .from-group .checkbox-group label::before {
     content: '';
@@ -2435,6 +2444,8 @@ input[type=submit] {
   @media (max-width: 767px) {
     .inner__banner {
       height: 143px; } }
+  .inner__banner__title {
+    text-shadow: 2px 2px 2px rgba(104, 104, 104, 0.3); }
 
 .loading {
   width: 100vw;
@@ -2458,7 +2469,7 @@ input[type=submit] {
     opacity: 0; }
     @media (max-width: 767px) {
       .loading__logo__roof {
-        width: 100px; } }
+        width: 120px; } }
   .loading__logo__window {
     width: 20px; }
     @media (max-width: 767px) {
@@ -2468,7 +2479,7 @@ input[type=submit] {
     height: 10px; }
     @media (max-width: 767px) {
       .loading__logo__text {
-        height: 6px; } }
+        height: 7px; } }
 
 .navbar {
   padding: 15px 88px; }
@@ -2746,7 +2757,7 @@ footer .logo {
     width: 100%;
     height: 350px;
     -o-object-fit: cover;
-       object-fit: cover; }
+    object-fit: cover; }
   @media (max-width: 767px) {
     .basic__item__title {
       position: absolute;
