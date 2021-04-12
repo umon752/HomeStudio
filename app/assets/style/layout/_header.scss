@@ -14,27 +14,35 @@
         height: 130px;
         position: absolute;
         top: 0;
-        box-shadow: 3px 3px 3px rgba(104, 104, 104, 0.3);
         z-index: 99;
+        transition: all ease .3s;
+
+        &__bg {
+            height: 100%;
+            box-shadow: 3px 3px 3px rgba(104, 104, 104, 0.3);
+            transition: all ease .3s;
+
+            @include lg {
+                box-shadow: none;
+            }
+        }
 
         img {
             height: 80px;
             object-fit: cover;
-            transition: all ease .4s;
 
             @include md {
                 margin-top: 0;
             }
         }
 
-        &:hover>img {
-            transition: all ease .4s;
+        &:hover>.logo__bg {
             transform: translateY(-5px);
+            transition: all ease .3s;
         }
 
         @include lg {
             position: inherit;
-            box-shadow: none;
         }
 
         @include md {
