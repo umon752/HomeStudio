@@ -1,6 +1,6 @@
 "use strict";
 
-var time = 1500;
+var loading = document.querySelector('.js-loading');
 /* Anime */
 
 var animation = anime.timeline({
@@ -20,20 +20,17 @@ var animation = anime.timeline({
     return 45 * i;
   }
 });
-$(document).ready(function () {
-  /* 1.5 秒後開始執行 */
-  setTimeout(function () {
-    // loading 畫面消失
-    $('.js-loading').addClass('loading--fadeOut'); // Anime 停止
 
-    animation.pause();
-    /* AOS */
+window.onload = function () {
+  // loading 畫面消失
+  loading.classList.add('loading--fadeOut'); // Anime 停止
 
-    AOS.init({
-      easing: 'ease',
-      duration: 600,
-      once: true
-    });
-  }, time);
-});
+  animation.pause(); // 載入 AOS
+
+  AOS.init({
+    easing: 'ease',
+    duration: 600,
+    once: true
+  });
+};
 //# sourceMappingURL=all.js.map
