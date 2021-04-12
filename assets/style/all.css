@@ -107,6 +107,9 @@ textarea {
   appearance: none;
   border-radius: 0; }
 
+select {
+  background: url("../images/select_arrow.svg") right 0.75rem center/20px no-repeat white; }
+
 input[type=submit] {
   cursor: pointer;
   -webkit-transition: all ease .3s;
@@ -2496,31 +2499,38 @@ input[type=submit] {
     height: 130px;
     position: absolute;
     top: 0;
-    -webkit-box-shadow: 3px 3px 3px rgba(104, 104, 104, 0.3);
-            box-shadow: 3px 3px 3px rgba(104, 104, 104, 0.3);
-    z-index: 99; }
+    z-index: 99;
+    -webkit-transition: all ease .3s;
+    -o-transition: all ease .3s;
+    transition: all ease .3s; }
+    .navbar .logo__bg {
+      height: 100%;
+      -webkit-box-shadow: 3px 3px 3px rgba(104, 104, 104, 0.3);
+              box-shadow: 3px 3px 3px rgba(104, 104, 104, 0.3);
+      -webkit-transition: all ease .3s;
+      -o-transition: all ease .3s;
+      transition: all ease .3s; }
+      @media (max-width: 1024px) {
+        .navbar .logo__bg {
+          -webkit-box-shadow: none;
+                  box-shadow: none; } }
     .navbar .logo img {
       height: 80px;
       -o-object-fit: cover;
-         object-fit: cover;
-      -webkit-transition: all ease .4s;
-      -o-transition: all ease .4s;
-      transition: all ease .4s; }
+         object-fit: cover; }
       @media (max-width: 767px) {
         .navbar .logo img {
           margin-top: 0; } }
-    .navbar .logo:hover > img {
-      -webkit-transition: all ease .4s;
-      -o-transition: all ease .4s;
-      transition: all ease .4s;
+    .navbar .logo:hover > .logo__bg {
       -webkit-transform: translateY(-5px);
           -ms-transform: translateY(-5px);
-              transform: translateY(-5px); }
+              transform: translateY(-5px);
+      -webkit-transition: all ease .3s;
+      -o-transition: all ease .3s;
+      transition: all ease .3s; }
     @media (max-width: 1024px) {
       .navbar .logo {
-        position: inherit;
-        -webkit-box-shadow: none;
-                box-shadow: none; } }
+        position: inherit; } }
     @media (max-width: 767px) {
       .navbar .logo {
         width: 90px;
