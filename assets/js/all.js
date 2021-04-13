@@ -1,7 +1,6 @@
 "use strict";
 
-var loading = document.querySelector('.js-loading');
-/* Anime */
+var loading = document.querySelector('.js-loading'); // Anime Loading 動畫
 
 var animation = anime.timeline({
   loop: true
@@ -22,7 +21,7 @@ var animation = anime.timeline({
 });
 
 window.onload = function () {
-  // loading 畫面消失
+  // Loading 畫面消失
   loading.classList.add('loading--fadeOut'); // Anime 停止
 
   animation.pause(); // 載入 AOS
