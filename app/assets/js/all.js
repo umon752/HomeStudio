@@ -1,6 +1,8 @@
-const time = 1500;
+const loading = document.querySelector('.js-loading');
 
-/* Anime */
+
+
+// Anime Loading 動畫
 let animation = anime.timeline({
     loop: true
   })
@@ -18,22 +20,20 @@ let animation = anime.timeline({
   })
 
 
-$(document).ready(() => {
 
-  /* 1.5 秒後開始執行 */
-  setTimeout(function () {
-    // loading 畫面消失
-    $('.js-loading').addClass('loading--fadeOut');
-    // Anime 停止
-    animation.pause();
+window.onload = function () {
 
-    /* AOS */
-    AOS.init({
-      easing: 'ease',
-      duration: 600,
-      once: true
-    });
+  // Loading 畫面消失
+  loading.classList.add('loading--fadeOut');
 
-  }, time);
+  // Anime 停止
+  animation.pause();
 
-});
+  // 載入 AOS
+  AOS.init({
+    easing: 'ease',
+    duration: 600,
+    once: true
+  });
+
+};
